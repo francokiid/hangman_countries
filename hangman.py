@@ -22,7 +22,17 @@ class HangmanGame(WordGenerator):
         
     def play_game(self):
         pass
-        
+        def login(self):
+        while True:
+            try:
+                name = input("Enter player name: ")
+                if not name:
+                    raise ValueError
+                self.player_name = Player(name)
+                self.play_game()
+                break
+            except ValueError:
+                print("Oops! A name is required to play the game.\n")
         
         
         
