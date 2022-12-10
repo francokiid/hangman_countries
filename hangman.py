@@ -21,10 +21,7 @@ class HangmanGame(WordGenerator):
                 self.display.append("_")
                 
     def greeting(self):
-        getpass("\nLet's play a classic game of HANGMAN: COUNTRIES!\n\n\nPress the <ENTER> key to continue...")
-        print_sleep("\n\nThe goal is to save the man from being hanged!", 2)
-        print_sleep("I will choose a random country, and you have to guess it one letter at a time.", 2)
-        print_sleep("Make 6 wrong guesses and you lose. The man will die!", 2)
+        pass
     
     def update_display(self):
         for idx, letter in enumerate(self.hidden_word):
