@@ -1,5 +1,7 @@
 from word_generator import WordGenerator
+from utils.print_sleep import PrintSleep
 
+print_sleep = PrintSleep().ps
 class HangmanGame(WordGenerator):
     def __init__(self):
         self.player_name = ""
