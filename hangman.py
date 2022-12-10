@@ -6,7 +6,7 @@ from utils.print_sleep import PrintSleep
 from utils.boolean import Boolean
 
 print_sleep = PrintSleep().ps
-
+yes_no = Boolean().yes_no
 
 class HangmanGame(WordGenerator):
     def __init__(self):
@@ -44,7 +44,7 @@ class HangmanGame(WordGenerator):
         pass        
 
     def play_again(self):
-        pass
+        return yes_no("\nGreat game! Would you like to guess another country? ")
     
     def goodbye(self):
         pass         
