@@ -20,7 +20,8 @@ class HangmanGame(WordGenerator):
     def login(self):
         pass
         
-        
+    def play_game(self):
+        pass
         
         
         
