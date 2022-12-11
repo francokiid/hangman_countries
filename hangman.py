@@ -76,7 +76,7 @@ class HangmanGame:
             print("HANGMAN: Guess the country to save the man!\n")
             print(*self.display)
             self.drawing.print_drawing(self.chances)
-            guess = input("\nGuess a letter >>>").upper()
+            guess = input("\nGuess a letter >>> ").upper()
             self.check_guess(guess)
             self.update_display()
             if got_hint is False and self.chances in (range(1, 3)):
