@@ -34,10 +34,42 @@ class HangmanGame:
         pass 
     
     def check_guess(self):
-        pass
+        if not guess.isalpha() or len(guess) > 1:
+
+            print_slp("Oops! Guess must be one letter.", 1)
+
+            return
+
+        if guess in self.guesses:
+
+            print_slp("Oops! You already guessed that letter.", 1)
+
+            return
+
+        if guess in self.word_gen.hidden_word:
+
+            print_slp("Yay! You guessed correct.", 1)
+
+        else:
+
+            print_slp("Oops! You guessed wrong.", 1)
+
+            self.chances -= 1
+
+        self.guesses.add(guess)
+
+
                 
     def check_win(self):
-        pass        
+        if "_" not in "".join(self.display):
+
+            print("You win! The man has been saved.")
+
+        else:
+
+            print("You lose! The man has been hanged.")
+
+        print(f"\nCountry: {self.word_gen.hidden_word}")        
 
     def play_again(self):
         return yes_no("\nGreat game! Would you like to guess another country? ")
