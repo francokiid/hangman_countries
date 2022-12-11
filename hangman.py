@@ -2,6 +2,7 @@ from os import system
 from getpass import getpass
 
 from word_generator import WordGenerator
+from drawing import Drawing 
 from utils.print_sleep import PrintSleep
 from utils.boolean import Boolean
 
