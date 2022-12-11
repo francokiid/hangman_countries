@@ -31,7 +31,7 @@ class HangmanGame:
         print_slp("Make 6 wrong guesses and you lose!", 3)
     
     def update_display(self):
-        for idx, letter in enumerate(self.hidden_word):
+        for idx, letter in enumerate(self.word_gen.hidden_word):
             if self.word_gen.hidden_word[idx] in self.guesses:
                 self.display[idx] = letter
 
@@ -64,23 +64,28 @@ class HangmanGame:
         print(f"\nCountry: {self.word_gen.hidden_word}")        
 
     def play_again(self):
-        return yes_no("\nGreat game! Would you like to guess another country? ")
+        return yes_no("\nGreat game! Would you like to guess another country? [Y/N] ")
     
     def goodbye(self):
-        print_slp("\Thank you for playing!".3)         
+        print_slp("\Thank you for playing!", 3)         
                 
     def play_game(self):
         got_hint = False
-        while self.chances > 0 and *_* in self.display:
-            system('cls')
-            print("HANGMAN: Guess the countryto save the man!\n")
+        while self.chances > 0 and "_" in self.display:
+            system("cls")
+            print("HANGMAN: Guess the country to save the man!\n")
             print(*self.display)
-            self.drawing.print_drawing(self.chance)
+            self.drawing.print_drawing(self.chances)
             guess = input("\nGuess a letter >>>").upper()
             self.check_guess(guess)
             self.update_display()
             if got_hint is False and self.chances in (range(1, 3)):
                 got_hint = self.get_hint()
+        system("cls")
+        self.check_win()
+        self.drawing.print_drawing(self.chances)
+            
+            
 if __name__ == "__main__":
     times_played = 0
     while True:
