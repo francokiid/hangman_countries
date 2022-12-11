@@ -5,16 +5,18 @@ from word_generator import WordGenerator
 from utils.print_sleep import PrintSleep
 from utils.boolean import Boolean
 
-print_sleep = PrintSleep().ps
+
+print_slp = PrintSleep().print_slp
 yes_no = Boolean().yes_no
 
-class HangmanGame(WordGenerator):
+class HangmanGame:
     def __init__(self):
+        self.word_gen = WordGenerator()
+        self.drawing = Drawing()
         self.chances = 6
         self.guesses = set()
-        self.hidden_word = self.get_country()
         self.display = []
-        for char in self.hidden_word:
+        for char in self.word_gen.hidden_word:
             if not char.isalpha():
                 self.display.append(char)
             else:
@@ -25,11 +27,8 @@ class HangmanGame(WordGenerator):
     
     def update_display(self):
         for idx, letter in enumerate(self.hidden_word):
-            if self.hidden_word[idx] in self.guesses:
+            if self.word_gen.hidden_word[idx] in self.guesses:
                 self.display[idx] = letter
-
-    def take_guess(self):
-        pass
 
     def get_hint(self):
         pass 
