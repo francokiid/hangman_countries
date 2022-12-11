@@ -24,7 +24,11 @@ class HangmanGame:
                 self.display.append("_")
                 
     def greeting(self):
-        pass
+        getpass("\nLet's play a classic game of HANGMAN: COUNTRIES!\n\n\nPress the <ENTER> key to continue...")
+        print_slp("\n\nThe goal is to save the man from being hanged.", 2)
+        print_slp("I will choose a random country, and you have to guess it one letter at a time.", 2)
+        print_slp("For every wrong guess, a new body part is drawn, and the man is brought closer to death.", 2)
+        print_slp("Make 6 wrong guesses and you lose!", 3)
     
     def update_display(self):
         for idx, letter in enumerate(self.hidden_word):
@@ -32,7 +36,11 @@ class HangmanGame:
                 self.display[idx] = letter
 
     def get_hint(self):
-        pass 
+        if yes_no("\nWould you like a hint? [Y/N] "):
+            print_slp(f"\nCapital City: {self.word_gen.words[self.word_gen.hidden_word]}", 3)
+            return True
+        else:
+            return False
     
     def check_guess(guess, self):
         if not guess.isalpha() or len(guess) > 1:
