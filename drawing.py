@@ -53,4 +53,4 @@ _|_         / \\''']
 
     def print_drawing(self, chances):
         print(self.hangman[chances])
-        return
+        
