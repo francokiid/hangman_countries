@@ -42,7 +42,7 @@ class HangmanGame:
         else:
             return False
     
-    def check_guess(guess, self):
+    def check_guess(self, guess):
         if not guess.isalpha() or len(guess) > 1:
             print_slp("Oops! Guess must be one letter.", 1)
             return
@@ -67,7 +67,7 @@ class HangmanGame:
         return yes_no("\nGreat game! Would you like to guess another country? [Y/N] ")
     
     def goodbye(self):
-        print_slp("\Thank you for playing!", 3)         
+        print_slp("\nThank you for playing!", 3)         
                 
     def play_game(self):
         got_hint = False
