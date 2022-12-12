@@ -3,8 +3,8 @@
   Hangman: Countries is a classic word game in which a player has to guess a random country one letter at a time. For every failed attempt, a chance is lost and a new body part is hanged, bringing the man closer to death. Notably, only one-letter inputs are considered as guesses. The program does not accept non-alphabet inputs nor repeated guesses. 
   If the player guesses the country before the drawing is finished, the player wins and the man is saved; otherwise, the computer wins and the man is hanged.
 
-To Play the Game:
-  - Download the zip, extract the folder, and open it in your IDE.
+To play the hame:
+  - Download the ZIP, extract it, and open it in your IDE.
   - Before running the program, make sure you have downloaded the needed modules (i.e., pathlib, random, time, os, system).
   - Run the module: hangman_main.py.
 
@@ -15,9 +15,10 @@ To Play the Game:
 
 # Video Presentation Link
 
-Time Stamps:
+[Click here!](https://youtu.be/ACJwLpp320w)
 
-Banaag, Camille Mae
-Balmes, Joann
-Candor, Valerie Myca
-Franco, Angel
+Time Stamps
+  - 00:01 Banaag, Camille Mae
+  - 01:15 Balmes, Joann
+  - 04:05 Candor, Valerie Myca
+  - 02:16 Franco, Angel
