@@ -5,7 +5,7 @@
 
 To play the hame:
   - Download the ZIP, extract it, and open it in your IDE.
-  - Before running the program, make sure you have downloaded the needed modules (i.e., pathlib, random, time, os, system).
+  - Before running the program, make sure you have downloaded the needed modules (i.e., pathlib, random, time, os).
   - Run the module: hangman_main.py.
 
 
