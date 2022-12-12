@@ -30,18 +30,7 @@ class HangmanGame:
         print_slp("For every wrong guess, a new body part is drawn, and the man is brought closer to death.", 2)
         print_slp("Make 6 wrong guesses and you lose!", 3)
     
-    def update_display(self):
-        for idx, letter in enumerate(self.word_gen.hidden_word):
-            if self.word_gen.hidden_word[idx] in self.guesses:
-                self.display[idx] = letter
 
-    def get_hint(self):
-        if yes_no("\nWould you like a hint? [Y/N] "):
-            print_slp(f"\nCapital City: {self.word_gen.words[self.word_gen.hidden_word]}", 3)
-            return True
-        else:
-            return False
-    
     def check_guess(self, guess):
         if not guess.isalpha() or len(guess) > 1:
             print_slp("Oops! Guess must be one letter.", 1)
@@ -55,6 +44,18 @@ class HangmanGame:
             print_slp("Oops! You guessed wrong.", 1)
             self.chances -= 1
         self.guesses.add(guess)
+                
+    def get_hint(self):
+        if yes_no("\nWould you like a hint? [Y/N] "):
+            print_slp(f"\nCapital City: {self.word_gen.words[self.word_gen.hidden_word]}", 3)
+            return True
+        else:
+            return False
+    
+    def update_display(self):
+        for idx, letter in enumerate(self.word_gen.hidden_word):
+            if self.word_gen.hidden_word[idx] in self.guesses:
+                self.display[idx] = letter
                 
     def check_win(self):
         if "_" not in "".join(self.display):
