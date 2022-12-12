@@ -10,7 +10,8 @@ To Play the Game:
 
 
 # UML Diagram
-![HangMan (1)](https://user-images.githubusercontent.com/117633129/206953150-e52bc2dd-ffff-43f0-a678-5f852879a909.png)
+![ACP Hangman UML Diagram](https://user-images.githubusercontent.com/117970385/206967273-e413dc30-6f07-4e9e-ba26-2022d077bb03.png)
+
 
 # Video Presentation Link
 
