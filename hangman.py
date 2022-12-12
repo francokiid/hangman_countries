@@ -29,7 +29,6 @@ class HangmanGame:
         print_slp("I will choose a random country, and you have to guess it one letter at a time.", 2)
         print_slp("For every wrong guess, a new body part is drawn, and the man is brought closer to death.", 2)
         print_slp("Make 6 wrong guesses and you lose!", 3)
-    
 
     def check_guess(self, guess):
         if not guess.isalpha() or len(guess) > 1:
@@ -68,7 +67,8 @@ class HangmanGame:
         return yes_no("\nGreat game! Would you like to guess another country? [Y/N] ")
     
     def goodbye(self):
-        print_slp("\nThank you for playing!", 3)         
+        print_slp("\nThank you for playing!", 3)
+        exit(0)
                 
     def play_game(self):
         got_hint = False
