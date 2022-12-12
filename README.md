@@ -5,9 +5,18 @@
 
 To Play the Game:
   - Download the zip, extract the folder, and open it in your IDE.
-  - Before running the program, make sure you have downloaded the third party dependencies in requirements.txt.
+  - Before running the program, make sure you have downloaded the needed modules (i.e., pathlib, random, time, os, system).
   - Run the module: hangman_main.py.
 
 
 # UML Diagram
 ![HangMan (1)](https://user-images.githubusercontent.com/117633129/206953150-e52bc2dd-ffff-43f0-a678-5f852879a909.png)
+
+# Video Presentation Link
+
+Time Stamps:
+
+Banaag, Camille Mae
+Balmes, Joann
+Candor, Valerie Myca
+Franco, Angel
