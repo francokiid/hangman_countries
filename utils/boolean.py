@@ -3,11 +3,13 @@ class Boolean:
         while True:
             try:
                 user_input = input(query).upper()
+                if not user_input.isalpha():
+                    raise TypeError
                 if user_input not in ("Y", "N"):
                     raise ValueError
                 if user_input == "Y":
                     return True
                 else:
                     return False
-            except ValueError:
+            except (TypeError, ValueError):
                 print("Oops! Invalid input. Try again.")
