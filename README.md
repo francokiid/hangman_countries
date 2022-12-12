@@ -1,6 +1,6 @@
 # HANGMAN: COUNTRIES
 
-  Hangman: Countries is a classic word game in which a player has to guess a random country one letter at a time. For every failed attempt, a chance is lost and a new body part is hanged, bringing the man closer to death. Notably, only one-letter inputs are considered as guesses. The program does not accept non-alphabet inputs nor repeated guesses. 
+  Hangman: Countries is a classic word game in which a player has to guess a random country one letter at a time. For every failed attempt, a chance is lost, and a new body part is hanged, bringing the man closer to death. Notably, only one-letter inputs are considered as guesses. The program does not accept non-alphabet inputs nor repeated guesses. 
   If the player guesses the country before the drawing is finished, the player wins and the man is saved; otherwise, the computer wins and the man is hanged.
 
 To play the hame:
